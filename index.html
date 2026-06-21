@@ -1,0 +1,745 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Seed Legal Documents</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Custom Scrollbar hiding for the tabs to look like a mobile app */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        body {
+            -webkit-tap-highlight-color: transparent;
+            background-color: #f8fafc; /* Light modern background */
+        }
+
+        /* Smooth fade in animation */
+        .animate-fade-in {
+            animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Section Card Styling */
+        .content-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            border: 1px solid #f1f5f9;
+        }
+    </style>
+</head>
+<body class="text-slate-800 font-sans antialiased max-w-2xl mx-auto min-h-screen">
+
+    <!-- App Header & Navigation Container (Sticky at top) -->
+    <div class="sticky top-0 z-50 bg-[#f8fafc]/95 backdrop-blur-md pt-6 pb-3 px-4">
+        
+        <!-- App Identity (Logo & Name) -->
+        <div class="flex items-center gap-3.5 mb-5">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#7C3AED] to-[#A78BFA] flex items-center justify-center text-white font-extrabold text-xl shadow-sm">
+                MS
+            </div>
+            <h1 class="text-[28px] font-extrabold text-slate-900 tracking-tight">Money Seed</h1>
+        </div>
+
+        <!-- Pill-Style Tabs -->
+        <nav class="bg-slate-100 p-1.5 rounded-[20px] flex overflow-x-auto scrollbar-hide shadow-inner border border-slate-200/50">
+            <button class="tab-btn active flex-1 min-w-[120px] py-2.5 px-4 bg-white shadow-sm rounded-[14px] whitespace-nowrap font-bold text-[15px] text-slate-900 transition-all duration-300 text-center" data-target="privacy">
+                Privacy Policy
+            </button>
+            <button class="tab-btn flex-1 min-w-[140px] py-2.5 px-4 bg-transparent rounded-[14px] whitespace-nowrap font-medium text-[15px] text-slate-500 hover:text-slate-700 transition-all duration-300 text-center" data-target="terms">
+                Terms & Conditions
+            </button>
+            <button class="tab-btn flex-1 min-w-[100px] py-2.5 px-4 bg-transparent rounded-[14px] whitespace-nowrap font-medium text-[15px] text-slate-500 hover:text-slate-700 transition-all duration-300 text-center" data-target="disclaimer">
+                Disclaimer
+            </button>
+        </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="p-4 pb-16">
+
+        <!-- ==================== PRIVACY POLICY ==================== -->
+        <div id="privacy" class="tab-content active animate-fade-in">
+            
+            <!-- Highlighted Header Card -->
+            <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 mb-6 border border-emerald-100 shadow-sm mt-2">
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-1 tracking-tight">Privacy Policy</h2>
+                <p class="text-emerald-700 text-sm mb-4 font-semibold">for Money Seed</p>
+                <div class="flex items-center gap-2 mb-5">
+                    <span class="bg-emerald-100 text-emerald-800 text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-md">
+                        Last Updated: June 2026
+                    </span>
+                </div>
+                
+                <!-- Badges -->
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="flex items-center gap-2 bg-white px-3 py-2.5 rounded-xl border border-emerald-100/50 text-[11px] font-bold text-slate-700 shadow-sm">
+                        <div class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center"><i class="fa-solid fa-shield-halved text-emerald-600"></i></div>
+                        Privacy First
+                    </div>
+                    <div class="flex items-center gap-2 bg-white px-3 py-2.5 rounded-xl border border-emerald-100/50 text-[11px] font-bold text-slate-700 shadow-sm">
+                        <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center"><i class="fa-solid fa-mobile-screen text-blue-600"></i></div>
+                        Local Storage
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <p class="text-slate-600 leading-relaxed mb-4 text-sm">Welcome to Money Seed.</p>
+                <p class="text-slate-600 leading-relaxed mb-4 text-sm">Your privacy is important to us. This Privacy Policy explains how Money Seed collects, stores, uses, and protects information when you use our application.</p>
+                <p class="text-slate-600 leading-relaxed text-sm">Please read this Privacy Policy carefully before using the app.</p>
+            </div>
+
+            <div class="space-y-4 text-sm text-slate-700">
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">1</span> About Money Seed</h3>
+                    <p class="mb-3">Money Seed is a personal savings tracker and financial planning application developed by Sazzidul Corporation.</p>
+                    <p class="mb-2">The purpose of this application is to help users:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Track personal savings</li>
+                        <li>Record financial goals</li>
+                        <li>Monitor savings progress</li>
+                        <li>Store SIP records for personal reference</li>
+                        <li>Build healthy financial habits</li>
+                    </ul>
+                    <p class="mt-2 text-slate-500 italic bg-slate-50 p-2 rounded-lg border border-slate-100">Money Seed is designed as a personal tracking tool only.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">2</span> Information We Collect</h3>
+                    <p class="mb-3">Money Seed is designed with privacy in mind.</p>
+                    <p class="mb-3 font-semibold text-emerald-600 bg-emerald-50 inline-block px-3 py-1 rounded-md">We do not require users to create an account.</p>
+                    <p class="mb-2 mt-2">We do not require users to provide:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Full Name</li>
+                        <li>Phone Number</li>
+                        <li>Address</li>
+                        <li>Bank Account Details</li>
+                        <li>Debit Card Information</li>
+                        <li>Credit Card Information</li>
+                        <li>Aadhaar Number</li>
+                        <li>PAN Number</li>
+                        <li>Passport Information</li>
+                    </ul>
+                    <p class="mt-2 text-slate-600 font-medium">The application can function without collecting personal identity information.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">3</span> Data Stored Inside the Application</h3>
+                    <p class="mb-3">To provide app functionality, Money Seed may store information that users manually enter into the application.</p>
+                    <p class="mb-2">Examples include:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+                        <li>Savings Records</li>
+                        <li>Financial Goals</li>
+                        <li>SIP Records</li>
+                        <li>Progress Information</li>
+                        <li>Reminder Preferences</li>
+                        <li>App Settings</li>
+                        <li>Theme Preferences</li>
+                        <li>Achievement Progress</li>
+                        <li>Streak Information</li>
+                    </ul>
+                    <p class="mt-2 text-slate-600">This information exists only for app functionality.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">4</span> Where Your Data Is Stored</h3>
+                    <p class="mb-3 font-medium"><mark class="bg-blue-100 text-blue-900 px-2 py-0.5 rounded-md">Money Seed stores user data locally on the user's device.</mark></p>
+                    <p class="mb-2">This means:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Data remains on your phone</li>
+                        <li>Data is not uploaded to our servers</li>
+                        <li>Data is not sold to anyone</li>
+                        <li>Data is not rented to anyone</li>
+                        <li>Data is not shared with advertisers</li>
+                    </ul>
+                    <p class="mt-2 text-slate-600 font-medium">The information remains under the user's control.</p>
+                </section>
+
+                <section class="content-card border-l-4 border-l-red-500">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">5</span> No Financial Transactions</h3>
+                    <p class="mb-3 font-semibold text-red-600">Money Seed does not process financial transactions.</p>
+                    <p class="mb-2">Users cannot:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-2">
+                        <li>Buy mutual funds</li>
+                        <li>Purchase stocks</li>
+                        <li>Send money</li>
+                        <li>Receive money</li>
+                        <li>Open bank accounts</li>
+                        <li>Invest through the application</li>
+                    </ul>
+                    <p class="mt-2 text-slate-600">The application is only a personal tracking and planning tool.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">6</span> No Financial Advice</h3>
+                    <p class="mb-2">Money Seed does not provide:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Financial advice</li>
+                        <li>Investment advice</li>
+                        <li>Stock recommendations</li>
+                        <li>Mutual fund recommendations</li>
+                        <li>Tax advice</li>
+                        <li>Legal advice</li>
+                    </ul>
+                    <p class="mb-3 text-slate-600">Any calculations, examples, projections, or estimates shown inside the app are for educational and planning purposes only.</p>
+                    <p class="text-slate-800 font-medium bg-yellow-50 p-3 rounded-lg border border-yellow-100">Users should consult qualified financial professionals before making financial decisions.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">7</span> Third-Party Services</h3>
+                    <p class="mb-3 text-slate-600">The current version of Money Seed may not use third-party services.</p>
+                    <p class="mb-2">If future versions include services such as:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-2">
+                        <li>Analytics</li>
+                        <li>Crash Reporting</li>
+                        <li>Cloud Backup</li>
+                        <li>Advertising Networks</li>
+                    </ul>
+                    <p class="mb-2 text-slate-600">this Privacy Policy may be updated accordingly.</p>
+                    <p class="text-slate-600">Users will be informed through updated policy versions.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">8</span> Data Security</h3>
+                    <p class="mb-3 text-slate-600">We take reasonable steps to protect user information stored within the application.</p>
+                    <p class="mb-3 text-slate-600">However, no software system can guarantee complete security.</p>
+                    <p class="mb-2">Users are responsible for:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-1">
+                        <li>Protecting their device</li>
+                        <li>Keeping backups if necessary</li>
+                        <li>Maintaining device security</li>
+                    </ul>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">9</span> Data Backup and Restore</h3>
+                    <p class="mb-3 text-slate-600">Future versions of Money Seed may include backup and restore features.</p>
+                    <p class="mb-3 text-slate-600">Users remain responsible for managing and protecting their own backups.</p>
+                    <p class="mb-2">We are not responsible for loss of locally stored data caused by:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-1">
+                        <li>Device reset</li>
+                        <li>Device damage</li>
+                        <li>Device theft</li>
+                        <li>Accidental deletion</li>
+                        <li>Operating system issues</li>
+                    </ul>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">10</span> Children's Privacy</h3>
+                    <p class="mb-3 text-slate-600">Money Seed is not specifically directed toward children under the age of 13.</p>
+                    <p class="mb-3 text-slate-600">We do not knowingly collect personal information from children.</p>
+                    <p class="text-slate-600">If a parent or guardian believes that a child has provided personal information, they may contact us.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">11</span> Updates to This Privacy Policy</h3>
+                    <p class="mb-3 text-slate-600">We may update this Privacy Policy from time to time.</p>
+                    <p class="mb-2">Updates may occur due to:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>New app features</li>
+                        <li>Legal requirements</li>
+                        <li>Security improvements</li>
+                        <li>Service changes</li>
+                    </ul>
+                    <p class="text-slate-600">The latest version will always be available within the application.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">12</span> User Responsibilities</h3>
+                    <p class="mb-2">Users are responsible for:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Entering accurate information</li>
+                        <li>Managing their own financial decisions</li>
+                        <li>Protecting their device</li>
+                        <li>Reviewing this Privacy Policy periodically</li>
+                    </ul>
+                    <p class="text-slate-600 italic bg-slate-50 p-3 rounded-lg">Money Seed should not be considered a replacement for professional financial guidance.</p>
+                </section>
+
+                <section class="content-card border-2 border-indigo-50">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs">13</span> Contact Us</h3>
+                    <p class="mb-4 text-slate-600">If you have questions about this Privacy Policy, please contact us.</p>
+                    
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 mb-4">
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1">Application</p>
+                        <p class="font-semibold text-slate-800 mb-3">Money Seed</p>
+
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1 mt-4">Developer</p>
+                        <p class="font-semibold text-slate-800 mb-3">Sazzidul Corporation</p>
+                        
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1 mt-4">Location</p>
+                        <p class="font-semibold text-slate-800"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i> Assam, India</p>
+                    </div>
+
+                    <!-- Advanced Gmail Mailto Button (Updated Subtext) -->
+                    <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-2 ml-1">Support Email</p>
+                    <a href="mailto:support.sazzidulcorp@gmail.com?subject=Money%20Seed%20Support" class="group w-full flex items-center justify-center gap-3 py-3.5 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-xl shadow-[0_4px_14px_0_rgba(79,70,229,0.39)] hover:shadow-[0_6px_20px_rgba(79,70,229,0.23)] transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0">
+                        <i class="fa-solid fa-envelope-open-text text-lg"></i>
+                        <div class="flex flex-col items-start">
+                            <span class="font-bold text-[15px] leading-tight">support.sazzidulcorp@gmail.com</span>
+                            <span class="text-[11px] text-blue-100 font-medium">Click to send an email</span>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="content-card bg-slate-900 text-white">
+                    <h3 class="font-bold text-lg text-white mb-3 flex items-center gap-2"><span class="bg-white/20 text-white w-6 h-6 rounded-md flex items-center justify-center text-xs">14</span> Acceptance of This Policy</h3>
+                    <p class="mb-3 text-slate-300">By using Money Seed, you acknowledge that you have read, understood, and agreed to this Privacy Policy.</p>
+                    <p class="mb-4 text-slate-300">If you do not agree with this Privacy Policy, please discontinue use of the application.</p>
+                    <p class="font-medium text-emerald-400 text-center pt-2 border-t border-slate-700/50">Thank you for using Money Seed.</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- ==================== TERMS & CONDITIONS ==================== -->
+        <div id="terms" class="tab-content hidden animate-fade-in">
+            
+            <!-- Highlighted Header Card -->
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 mb-6 border border-blue-100 shadow-sm mt-2">
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-1 tracking-tight">Terms & Conditions</h2>
+                <p class="text-blue-700 text-sm mb-4 font-semibold">for Money Seed</p>
+                <div class="flex items-center gap-2">
+                    <span class="bg-blue-100 text-blue-800 text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-md">
+                        Last Updated: June 2026
+                    </span>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <p class="text-slate-600 leading-relaxed mb-4 text-sm">Welcome to Money Seed.</p>
+                <p class="text-slate-600 leading-relaxed mb-4 text-sm">These Terms & Conditions govern your use of the Money Seed application. By downloading, installing, or using the application, you agree to comply with these terms.</p>
+                <p class="text-red-600 font-medium text-sm bg-red-50 p-2 rounded-lg border border-red-100">If you do not agree with any part of these Terms & Conditions, please discontinue use of the application.</p>
+            </div>
+
+            <div class="space-y-4 text-sm text-slate-700">
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">1</span> About Money Seed</h3>
+                    <p class="mb-3 text-slate-600">Money Seed is a personal savings tracker and financial planning application developed by Sazzidul Corporation.</p>
+                    <p class="mb-2">The application is designed to help users:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Track savings records</li>
+                        <li>Monitor financial goals</li>
+                        <li>Record SIP entries</li>
+                        <li>Build better saving habits</li>
+                        <li>Plan future financial goals</li>
+                    </ul>
+                    <p class="mt-2 text-slate-600 font-medium">Money Seed is intended for educational and personal financial tracking purposes only.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">2</span> Acceptance of Terms</h3>
+                    <p class="mb-2">By using Money Seed, you confirm that:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>You have read these Terms & Conditions.</li>
+                        <li>You understand these Terms & Conditions.</li>
+                        <li>You agree to comply with these Terms & Conditions.</li>
+                    </ul>
+                    <p class="text-slate-600">Continued use of the application means continued acceptance of these terms.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">3</span> Permitted Use</h3>
+                    <p class="mb-2">Users may use Money Seed for:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-2">
+                        <li>Personal savings tracking</li>
+                        <li>Goal planning</li>
+                        <li>Financial record keeping</li>
+                        <li>Educational financial calculations</li>
+                    </ul>
+                    <p class="text-slate-600 font-medium">The application must be used in a lawful and responsible manner.</p>
+                </section>
+
+                <section class="content-card border-l-4 border-l-red-500">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">4</span> Prohibited Activities</h3>
+                    <p class="mb-2">Users must not:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Attempt to hack the application</li>
+                        <li>Reverse engineer the application</li>
+                        <li>Modify application code</li>
+                        <li>Distribute unauthorized copies</li>
+                        <li>Abuse app functionality</li>
+                        <li>Misrepresent financial information</li>
+                        <li>Use the application for illegal purposes</li>
+                    </ul>
+                    <p class="text-slate-600 bg-red-50 p-2 rounded text-red-800 text-xs">Violation of these terms may result in restrictions or future removal of access where applicable.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">5</span> No Financial Services</h3>
+                    <p class="mb-2">Money Seed is not:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-2">
+                        <li>A bank</li>
+                        <li>A mutual fund platform</li>
+                        <li>A stock trading platform</li>
+                        <li>A brokerage service</li>
+                        <li>A payment gateway</li>
+                        <li>A financial institution</li>
+                    </ul>
+                    <p class="mb-2 text-slate-600 font-semibold">Users cannot invest money through Money Seed.</p>
+                    <p class="mb-3 text-slate-600 font-semibold">Users cannot buy financial products through Money Seed.</p>
+                    <p class="text-slate-500 italic">The application is only a personal record keeping and planning tool.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">6</span> No Financial Advice</h3>
+                    <p class="mb-2">Information displayed inside the application should not be considered:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Financial advice</li>
+                        <li>Investment advice</li>
+                        <li>Tax advice</li>
+                        <li>Legal advice</li>
+                        <li>Professional consultation</li>
+                    </ul>
+                    <p class="mb-2 text-slate-600 font-medium">Any decisions made by users remain entirely their responsibility.</p>
+                    <p class="text-slate-600">Users should consult qualified professionals before making financial decisions.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">7</span> Accuracy of Information</h3>
+                    <p class="mb-3 text-slate-600">Money Seed attempts to provide accurate calculations based on information entered by users.</p>
+                    <p class="mb-2">However:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Calculations may contain limitations</li>
+                        <li>Estimates may differ from actual results</li>
+                        <li>Future financial outcomes cannot be guaranteed</li>
+                    </ul>
+                    <p class="text-slate-600 font-medium bg-yellow-50 p-2 border border-yellow-100 rounded">Users are responsible for verifying all information independently.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">8</span> User Data</h3>
+                    <p class="mb-2">Users are responsible for:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Maintaining their own records</li>
+                        <li>Protecting their devices</li>
+                        <li>Keeping backups if needed</li>
+                    </ul>
+                    <p class="mb-3 text-slate-600">Money Seed stores information locally on the user's device.</p>
+                    <p class="mb-2 text-slate-600">The developer is not responsible for data loss caused by:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-1">
+                        <li>Device damage</li>
+                        <li>Device reset</li>
+                        <li>Software failure</li>
+                        <li>User error</li>
+                        <li>Unauthorized device access</li>
+                    </ul>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">9</span> Intellectual Property</h3>
+                    <p class="mb-2">All rights related to Money Seed including:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-3">
+                        <li>App design</li>
+                        <li>Branding</li>
+                        <li>Logo</li>
+                        <li>Interface</li>
+                        <li>Features</li>
+                        <li>Content</li>
+                    </ul>
+                    <p class="mb-3 text-slate-600">remain the property of Sazzidul Corporation unless otherwise stated.</p>
+                    <p class="text-slate-600 bg-slate-50 p-2 rounded">Users may not copy, reproduce, or redistribute the application without permission.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">10</span> Limitation of Liability</h3>
+                    <p class="mb-3 text-slate-600 font-semibold">To the maximum extent permitted by law:</p>
+                    <p class="mb-2 text-slate-600">Sazzidul Corporation shall not be responsible for:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-2">
+                        <li>Financial losses</li>
+                        <li>Investment losses</li>
+                        <li>Data loss</li>
+                        <li>Business interruption</li>
+                        <li>Indirect damages</li>
+                        <li>Consequential damages</li>
+                    </ul>
+                    <p class="mb-3 text-slate-600">arising from the use of the application.</p>
+                    <p class="text-slate-800 font-bold">Use of the application is entirely at the user's own risk.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">11</span> Updates and Changes</h3>
+                    <p class="mb-2 text-slate-600">We reserve the right to:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Add features</li>
+                        <li>Remove features</li>
+                        <li>Modify functionality</li>
+                        <li>Update policies</li>
+                        <li>Improve security</li>
+                    </ul>
+                    <p class="mb-3 text-slate-600 font-medium">without prior notice.</p>
+                    <p class="text-slate-600">Continued use of the application after updates constitutes acceptance of revised terms.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">12</span> Termination of Use</h3>
+                    <p class="mb-2 text-slate-600">Users may stop using Money Seed at any time.</p>
+                    <p class="text-slate-600">We reserve the right to restrict access if users violate these Terms & Conditions.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">13</span> Governing Principles</h3>
+                    <p class="mb-2 text-slate-600">These Terms & Conditions are intended to ensure fair, safe, and responsible use of the application.</p>
+                    <p class="text-slate-600">Users agree to use the application honestly and responsibly.</p>
+                </section>
+
+                <section class="content-card border-2 border-indigo-50">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3">Contact Information</h3>
+                    
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 mb-4">
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1">Application</p>
+                        <p class="font-semibold text-slate-800 mb-3">Money Seed</p>
+
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1 mt-4">Developer</p>
+                        <p class="font-semibold text-slate-800 mb-3">Sazzidul Corporation</p>
+                        
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1 mt-4">Location</p>
+                        <p class="font-semibold text-slate-800"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i> Assam, India</p>
+                    </div>
+
+                    <!-- Advanced Gmail Mailto Button (Updated Subtext) -->
+                    <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-2 ml-1">Support Email</p>
+                    <a href="mailto:support.sazzidulcorp@gmail.com?subject=Money%20Seed%20Support" class="group w-full flex items-center justify-center gap-3 py-3.5 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-xl shadow-[0_4px_14px_0_rgba(79,70,229,0.39)] hover:shadow-[0_6px_20px_rgba(79,70,229,0.23)] transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0">
+                        <i class="fa-solid fa-envelope-open-text text-lg"></i>
+                        <div class="flex flex-col items-start">
+                            <span class="font-bold text-[15px] leading-tight">support.sazzidulcorp@gmail.com</span>
+                            <span class="text-[11px] text-blue-100 font-medium">Click to send an email</span>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="content-card bg-slate-900 text-white">
+                    <h3 class="font-bold text-lg text-white mb-3 flex items-center gap-2"><span class="bg-white/20 text-white w-6 h-6 rounded-md flex items-center justify-center text-xs">15</span> Final Agreement</h3>
+                    <p class="mb-4 text-slate-300">By using Money Seed, you acknowledge that you have read, understood, and agreed to these Terms & Conditions.</p>
+                    <p class="font-medium text-emerald-400 text-center pt-2 border-t border-slate-700/50">Thank you for using Money Seed.</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- ==================== DISCLAIMER ==================== -->
+        <div id="disclaimer" class="tab-content hidden animate-fade-in">
+            
+            <!-- Highlighted Header Card -->
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 mb-6 border border-amber-100 shadow-sm mt-2">
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-1 tracking-tight">Disclaimer</h2>
+                <p class="text-amber-700 text-sm mb-4 font-semibold">for Money Seed</p>
+                <div class="flex items-center gap-2">
+                    <span class="bg-amber-100 text-amber-800 text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-md">
+                        Last Updated: June 2026
+                    </span>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <p class="text-slate-600 leading-relaxed mb-4 text-sm">Please read this Disclaimer carefully before using Money Seed.</p>
+                <p class="text-slate-800 font-medium leading-relaxed text-sm bg-amber-50 p-3 rounded-lg border border-amber-100">By using the application, you acknowledge and agree to the terms described below.</p>
+            </div>
+
+            <div class="space-y-4 text-sm text-slate-700">
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">1</span> Educational Purpose Only</h3>
+                    <p class="mb-3 text-slate-600 font-medium">Money Seed is designed for educational, informational, and personal financial tracking purposes only.</p>
+                    <p class="mb-2 text-slate-600">The application helps users:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Track savings</li>
+                        <li>Monitor financial goals</li>
+                        <li>Record SIP entries</li>
+                        <li>Plan future savings targets</li>
+                        <li>Improve financial habits</li>
+                    </ul>
+                    <p class="text-slate-600 bg-slate-50 p-2 rounded border border-slate-100">The application should not be considered a professional financial service.</p>
+                </section>
+
+                <section class="content-card border-l-4 border-l-yellow-400">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">2</span> Not a Financial Advisor</h3>
+                    <p class="mb-3 font-semibold text-yellow-700">Money Seed is not a financial advisor.</p>
+                    <p class="mb-2 text-slate-600">Money Seed does not provide:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-1 sm:grid-cols-2">
+                        <li>Financial advice</li>
+                        <li>Investment advice</li>
+                        <li>Stock recommendations</li>
+                        <li>Mutual fund recommendations</li>
+                        <li>Tax advice</li>
+                        <li>Legal advice</li>
+                        <li>Insurance advice</li>
+                    </ul>
+                    <p class="text-slate-500 italic">Any information presented within the application is for educational purposes only.</p>
+                </section>
+
+                <section class="content-card border-l-4 border-l-orange-400">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">3</span> Not an Investment Platform</h3>
+                    <p class="mb-2 text-slate-600">Money Seed is not:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-2">
+                        <li>A mutual fund platform</li>
+                        <li>A stock trading platform</li>
+                        <li>A brokerage platform</li>
+                        <li>A cryptocurrency platform</li>
+                        <li>A banking service</li>
+                    </ul>
+                    <p class="mb-2 text-slate-600 font-semibold">Users cannot invest money through this application.</p>
+                    <p class="mb-3 text-slate-600 font-semibold">Users cannot purchase financial products through this application.</p>
+                    <p class="text-slate-600 bg-slate-50 p-2 rounded">The app only allows users to record and monitor their own financial information.</p>
+                </section>
+
+                <section class="content-card bg-blue-50 border border-blue-100">
+                    <h3 class="font-bold text-lg text-blue-900 mb-3 flex items-center gap-2"><span class="bg-blue-200 text-blue-800 w-6 h-6 rounded-md flex items-center justify-center text-xs">4</span> SIP Calculator Disclaimer</h3>
+                    <p class="mb-3 text-blue-800 font-medium">The SIP Calculator provided inside the application is intended only for estimation purposes.</p>
+                    <p class="mb-2 text-slate-700">The projected values displayed:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-700 mb-3">
+                        <li>Are mathematical estimates</li>
+                        <li>Depend on user inputs</li>
+                        <li>Do not guarantee future returns</li>
+                    </ul>
+                    <p class="mb-2 text-slate-700">Actual investment performance may differ significantly.</p>
+                    <p class="text-red-600 font-bold bg-white p-2 rounded shadow-sm inline-block">Past performance never guarantees future results.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">5</span> Financial Decisions</h3>
+                    <p class="mb-3 text-slate-800 font-medium">Users remain fully responsible for their own financial decisions.</p>
+                    <p class="mb-2 text-slate-600">Before making any investment decision, users should consult:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-2">
+                        <li>Certified Financial Advisors</li>
+                        <li>Investment Professionals</li>
+                        <li>Tax Professionals</li>
+                        <li>Legal Professionals</li>
+                    </ul>
+                    <p class="text-red-600 font-medium bg-red-50 p-2 border border-red-100 rounded">Money Seed should never be the sole basis for financial decisions.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">6</span> Accuracy of Information</h3>
+                    <p class="mb-2 text-slate-600">While reasonable efforts are made to provide accurate calculations:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3">
+                        <li>Errors may occur</li>
+                        <li>Estimates may vary</li>
+                        <li>Market conditions may change</li>
+                    </ul>
+                    <p class="text-slate-600">The developer makes no guarantees regarding accuracy, completeness, or reliability.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">7</span> No Liability</h3>
+                    <p class="mb-2 text-slate-600">Sazzidul Corporation shall not be held responsible for:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-2">
+                        <li>Financial losses</li>
+                        <li>Investment losses</li>
+                        <li>Business losses</li>
+                        <li>Missed opportunities</li>
+                        <li>Incorrect decisions made by users</li>
+                    </ul>
+                    <p class="text-slate-800 font-bold">All use of the application is at the user's own risk.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">8</span> Third-Party Information</h3>
+                    <p class="mb-3 text-slate-600">If future versions include educational content, examples, financial illustrations, or external resources:</p>
+                    <p class="mb-2 text-slate-600">Such information should be treated as general educational material only.</p>
+                    <p class="text-slate-600 bg-slate-50 p-2 rounded">It should never be interpreted as professional financial guidance.</p>
+                </section>
+
+                <section class="content-card">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3 flex items-center gap-2"><span class="bg-slate-100 text-slate-600 w-6 h-6 rounded-md flex items-center justify-center text-xs">9</span> No Guarantees</h3>
+                    <p class="mb-2 text-slate-600">Money Seed makes no promises regarding:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 grid grid-cols-2">
+                        <li>Wealth creation</li>
+                        <li>Investment returns</li>
+                        <li>Savings outcomes</li>
+                        <li>Financial success</li>
+                    </ul>
+                    <p class="text-slate-600 font-medium">Individual results will always vary.</p>
+                </section>
+
+                <section class="content-card bg-slate-900 text-white mb-6">
+                    <h3 class="font-bold text-lg text-white mb-3 flex items-center gap-2"><span class="bg-white/20 text-white w-6 h-6 rounded-md flex items-center justify-center text-xs">10</span> Acceptance of Disclaimer</h3>
+                    <p class="mb-2 text-slate-300">By using Money Seed, you acknowledge that:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-300 mb-4">
+                        <li>You understand this Disclaimer.</li>
+                        <li>You accept this Disclaimer.</li>
+                        <li>You agree that all financial decisions remain your responsibility.</li>
+                    </ul>
+                    <p class="mb-4 text-red-400 text-sm font-semibold">If you do not agree with this Disclaimer, please discontinue use of the application.</p>
+                </section>
+
+                <section class="content-card border-2 border-indigo-50">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3">Contact Information</h3>
+                    
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 mb-4">
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1">Application</p>
+                        <p class="font-semibold text-slate-800 mb-3">Money Seed</p>
+
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1 mt-4">Developer</p>
+                        <p class="font-semibold text-slate-800 mb-3">Sazzidul Corporation</p>
+                        
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1 mt-4">Location</p>
+                        <p class="font-semibold text-slate-800"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i> Assam, India</p>
+                    </div>
+
+                    <!-- Advanced Gmail Mailto Button (Updated Subtext) -->
+                    <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-2 ml-1">Support Email</p>
+                    <a href="mailto:support.sazzidulcorp@gmail.com?subject=Money%20Seed%20Support" class="group w-full flex items-center justify-center gap-3 py-3.5 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-xl shadow-[0_4px_14px_0_rgba(79,70,229,0.39)] hover:shadow-[0_6px_20px_rgba(79,70,229,0.23)] transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0">
+                        <i class="fa-solid fa-envelope-open-text text-lg"></i>
+                        <div class="flex flex-col items-start">
+                            <span class="font-bold text-[15px] leading-tight">support.sazzidulcorp@gmail.com</span>
+                            <span class="text-[11px] text-blue-100 font-medium">Click to send an email</span>
+                        </div>
+                    </a>
+                </section>
+                
+                <p class="text-center text-slate-500 mt-8 mb-4 font-medium">Thank you for using Money Seed.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JavaScript for Tab functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Reset all tabs to inactive styling (grey text, no background)
+                    tabs.forEach(t => {
+                        t.classList.remove('bg-white', 'shadow-sm', 'text-slate-900', 'font-bold');
+                        t.classList.add('bg-transparent', 'text-slate-500', 'font-medium');
+                    });
+
+                    // Set clicked tab to active styling (white pill inside the grey container)
+                    tab.classList.remove('bg-transparent', 'text-slate-500', 'font-medium');
+                    tab.classList.add('bg-white', 'shadow-sm', 'text-slate-900', 'font-bold');
+
+                    // Hide all content areas
+                    contents.forEach(c => {
+                        c.classList.add('hidden');
+                    });
+
+                    // Show target content area and scroll slightly to top
+                    const targetId = tab.getAttribute('data-target');
+                    document.getElementById(targetId).classList.remove('hidden');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
