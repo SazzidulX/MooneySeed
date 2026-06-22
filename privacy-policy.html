@@ -15,32 +15,26 @@
 </head>
 <body class="text-slate-800 font-sans antialiased max-w-2xl mx-auto min-h-screen">
 
-    <!-- App Header & Navigation Container (Sticky at top) -->
     <div class="sticky top-0 z-50 bg-[#f8fafc]/95 backdrop-blur-md pt-6 pb-3 px-4">
-        <a href="/" class="flex items-center gap-3.5 mb-5">
+        <div class="flex items-center gap-3.5 mb-5">
             <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#7C3AED] to-[#A78BFA] flex items-center justify-center text-white font-extrabold text-xl shadow-sm">MS</div>
             <h1 class="text-[28px] font-extrabold text-slate-900 tracking-tight">Money Seed</h1>
-        </a>
+        </div>
 
-        <!-- Small Tabs (No horizontal scroll needed) -->
         <nav class="bg-slate-100 p-1.5 rounded-[20px] flex justify-between items-center w-full shadow-inner border border-slate-200/50">
-            <!-- Active Tab -->
-            <a href="privacy" class="flex-1 py-2 px-1 bg-white shadow-sm rounded-[14px] whitespace-nowrap font-bold text-[11px] sm:text-[13px] text-slate-900 transition-all duration-300 text-center block">Privacy Policy</a>
-            <a href="terms" class="flex-1 py-2 px-1 bg-transparent rounded-[14px] whitespace-nowrap font-bold text-[11px] sm:text-[13px] text-slate-500 hover:text-slate-700 transition-all duration-300 text-center block mx-1">Terms & Conditions</a>
-            <a href="disclaimer" class="flex-1 py-2 px-1 bg-transparent rounded-[14px] whitespace-nowrap font-bold text-[11px] sm:text-[13px] text-slate-500 hover:text-slate-700 transition-all duration-300 text-center block">Disclaimer</a>
+            <a href="/privacy-policy" class="flex-1 py-2 px-1 bg-white shadow-sm rounded-[14px] whitespace-nowrap font-bold text-[11px] sm:text-[13px] text-slate-900 transition-all duration-300 text-center block">Privacy Policy</a>
+            <a href="/terms-condition" class="flex-1 py-2 px-1 bg-transparent rounded-[14px] whitespace-nowrap font-bold text-[11px] sm:text-[13px] text-slate-500 hover:text-slate-700 transition-all duration-300 text-center block mx-1">Terms & Conditions</a>
+            <a href="/disclaimer" class="flex-1 py-2 px-1 bg-transparent rounded-[14px] whitespace-nowrap font-bold text-[11px] sm:text-[13px] text-slate-500 hover:text-slate-700 transition-all duration-300 text-center block">Disclaimer</a>
         </nav>
     </div>
 
     <main class="p-4 pb-16 animate-fade-in">
-        <!-- Highlighted Header Card -->
         <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 mb-6 border border-emerald-100 shadow-sm mt-2">
             <h2 class="text-3xl font-extrabold text-slate-900 mb-1 tracking-tight">Privacy Policy</h2>
             <p class="text-emerald-700 text-sm mb-4 font-semibold">for Money Seed</p>
             <div class="flex items-center gap-2 mb-5">
                 <span class="bg-emerald-100 text-emerald-800 text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-md">Last Updated: June 2026</span>
             </div>
-            
-            <!-- Badges -->
             <div class="grid grid-cols-2 gap-3">
                 <div class="flex items-center gap-2 bg-white px-3 py-2.5 rounded-xl border border-emerald-100/50 text-[11px] font-bold text-slate-700 shadow-sm">
                     <div class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center"><i class="fa-solid fa-shield-halved text-emerald-600"></i></div>
@@ -234,8 +228,10 @@
                 <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 mb-4">
                     <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1">Application</p>
                     <p class="font-semibold text-slate-800 mb-3">Money Seed</p>
+
                     <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1 mt-4">Developer</p>
                     <p class="font-semibold text-slate-800 mb-3">Sazzidul Corporation</p>
+                    
                     <p class="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1 mt-4">Location</p>
                     <p class="font-semibold text-slate-800"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i> Assam, India</p>
                 </div>
